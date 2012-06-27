@@ -1,0 +1,10 @@
+<div id="primary" class="typography">
+	$Content
+</div>
+<script type="text/javascript">
+$.scPlayer.defaults.onDomReady = function(){
+	$('a.sc-player, div.sc-player').scPlayer({
+	  autoPlay: true
+	});
+};
+</script>
