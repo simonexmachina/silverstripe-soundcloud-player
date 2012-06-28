@@ -15,9 +15,9 @@ class SoundCloudPlayer_Controller extends ContentController {
 		parent::init();
 		$scripts = array(
 				'sapphire/thirdparty/jquery/jquery.js',
-				'soundcloud/js/soundcloud.player.api.js',
-				'soundcloud/js/sc-player.js',
-				'soundcloud/js/soundcloud-module.js'
+				'soundcloud-player/js/soundcloud.player.api.js',
+				'soundcloud-player/js/sc-player.js',
+				'soundcloud-player/js/soundcloud-module.js'
 		);
 		foreach( self::$requirements['js'] as $uri ) {
 			$scripts[] = $uri;
@@ -27,8 +27,8 @@ class SoundCloudPlayer_Controller extends ContentController {
 		}
 		Requirements::combine_files('soundcloud-combined.js', $scripts);
 		$stylesheets = array(
-				'soundcloud/css/sc-player-standard.css',
-				'soundcloud/css/soundcloud-player.css'
+				'soundcloud-player/css/sc-player-standard.css',
+				'soundcloud-player/css/soundcloud-player.css'
 		);
 		foreach( self::$requirements['css'] as $uri ) {
 			$stylesheets[] = $uri;
